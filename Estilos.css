@@ -1,0 +1,299 @@
+:root {
+    --font: #e5e5e5e5;
+    --bgnd: #ffffff;
+    --colorprimario: #25a18e;
+    --gray: #c5c5c5;
+    --medium-gray: #67808e;
+    --rgba: rgba(0,0,0,0.08);
+    --white-blue: #d8dfe8;
+    --medium-blue: #0a38718a;
+    --grey: #343a40;
+    --light-grey: #495057;
+    --colorfondo: #f1fffa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+::selection {
+    background: var(--colorprimario);
+    color: var(--font);
+}
+body{
+    height: 100%;
+    background-color: var(--colorfondo);
+}
+img{
+    max-width: 100%;
+}
+
+header{
+    position: absolute;
+    margin: 40px 0px 0px 40px;
+}
+footer{
+    margin-top: 30px;
+    width: 100%;
+    background-color: var(--colorprimario);
+    height: 10vh;
+}
+footer p{
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+}
+.logo {
+    width: 120px;
+    height: 48px;
+}
+
+.main  {
+    display: flex;
+    flex-direction: row;
+}
+.encriptadorSeccion {
+    width: 60%;
+    margin: 150px 0px 0px 140px;
+    background: transparent;
+}
+.encriptar {
+    text-transform: lowercase;
+    background-color: var(--colorfondo);
+    width: 660px;
+    height: 380px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    outline: none;
+    border:none;
+    border-radius: 15px;
+    resize: none;
+}
+.encriptar::placeholder, :focus {
+    color: var(--colorprimario);
+}
+.mensajecontenedor {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    gap: 8px;
+    top: 500px;
+}
+.avisotexto {
+    width: 100%;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 18px;
+    line-height: 150%;
+    opacity: 0.8;
+    color: var(--medium-gray);
+}
+.botonesMC {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    /*position: absolute;*/
+    top: 526px;
+}
+.btnencriptar {
+    width: 330px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--bgnd);
+    background: var(--colorprimario);
+    border: 1px solid var(--colorprimario);
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px var(--rgba);
+}
+.btnencriptar:active {
+    box-shadow: inset 2px 2px 4px var(--bgnd),
+    inset -3px -4px 8px var(--colorprimario);
+    color: var(--white-blue);
+}
+.btndesencriptar {
+    width: 330px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--colorprimario);
+    background: var(--white-blue);
+    border: 1px solid var(--colorprimario);
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px var(--rgba);
+}
+.btncopiar:active,
+.btndesencriptar:active {
+    box-shadow: inset 2px 2px 4px var(--colorprimario),
+    inset -3px -4px 8px var(--bgnd);
+    color: var(--medium-blue);
+}
+.tarjetaSeccion {
+    width: 270px;
+    height: 580px;
+    background: var(--font);
+    position: relative;
+    margin-top: 40px;
+    border-radius: 32px;
+    text-align: center;
+}
+.tarjetaEncriptador {
+    width: 250px;
+    margin: auto;
+    margin-top: 50%;
+    background: var(--font);
+}
+.img-muñeco {
+    background: var(--font);
+} 
+.texto-uno {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--grey);
+    background: var(--font);
+}
+.texto-dos {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--medium-gray);
+    background: var(--font);
+}
+.evaluar {
+    width: 100%;
+    height: 490px;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--light-grey);
+    background: transparent;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+    border: none;
+    resize: none;
+}
+
+.evaluar:focus {
+    outline: none;
+}
+.btncopiar {
+    width: 225px;
+    height: 70px;
+    margin: 23px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    padding: 24px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background: var(--white-blue);
+    border: 1px solid var(--colorprimario);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btnencriptar:hover,
+.btndesencriptar:hover,
+.btncopiar:hover {
+    transform: scale(0.98);
+}
+
+@media(max-width: 1250px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .encriptadorSeccion {
+        margin: 170px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .botonesMC{
+        display: flex;
+        align-items: center;
+        position: inherit;
+    }
+    .mensajecontenedor {
+        position: inherit;
+        margin: 15px;
+    }
+
+    .tarjetaSeccion {
+        width: 670px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .tarjetaEncriptador {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        bottom: 20%;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .img-muñeco {
+        display: none;
+    }
+    .btncopiar {
+        position: inherit;
+        width: 80%;
+
+    }
+    .evaluar {
+        width: 100%;
+        height: 210px;
+        padding: 10px;
+    }
+}
+
+@media(max-width: 720px) {
+    .logo {
+        padding: 2px;
+    }
+    .encriptar {
+        width: 90%;
+        font-size: 25px;
+    }
+    .botonesMC {
+        display: grid;
+        gap: 21px;
+    }
+    .tarjetaSeccion {
+
+        width: 90%;
+    }
+}

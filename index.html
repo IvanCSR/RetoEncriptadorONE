@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto Encriptador</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Estilos.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="./imagenes/logo.svg" alt="logo de alura">
+    </header>
+    <main class="main">
+        <section class="encriptadorSeccion">
+            <textarea id="textoEncriptar" class="encriptar" placeholder="Ingrese el texto aquí..."></textarea>
+            <div class="mensajecontenedor">
+                <img src="./imagenes/aviso.svg" alt="aviso-imagen" class="img-aviso">
+                <p id="mensajeAviso" class="avisotexto">Sólo letras minúsculas y sin acentos...</p>
+            </div>
+            <div class="botonesMC">
+                <button type="submit" id="btnEncriptar" class="btnencriptar">Encriptar</button>
+                <button type="submit" id="btnDesencriptar" class="btndesencriptar">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="tarjetaSeccion">
+            <div id="tarjeta" class="tarjetaEncriptador">
+                <img src="./imagenes/persona.svg" alt="persona" class="img-muñeco">
+                <p class="texto-uno">Ningún mensaje fue encontrado</p>
+                <p class="texto-dos">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <textarea id="txtResultado" type="mensaje" class="evaluar" readonly></textarea>
+            <button type="submit" id="btnCopiar" class="btncopiar">Copiar Texto</button>
+        </section>
+    </main>
+    <footer>
+            <p>Desarrollado por Ivan Chavez - Alura Challenges ONE </p>
+            <p>2024 </p>
+    </footer>
+    <script src="./App.js"></script>
+</body>
+</html>
